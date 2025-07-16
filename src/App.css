@@ -1,0 +1,18 @@
+body{
+    background-color: #DEE2E7;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    padding-left: 5px;
+}
+a:hover{
+    color: black;
+    background-color: #E5F1FF;
+}
+.section_main{
+    background-image: url('./assets/backgrounds/Banner-board-800x420 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
