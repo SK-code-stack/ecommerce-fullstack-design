@@ -3,7 +3,7 @@ import logo from '../../assets/HeaderImages/logo.png';
 
 export default function Header({showSearch =true}) {
   return (
-    <header className='h-[86px] w-full flex items-center px-[9%] bg-[#FFFFFF] justify-between'>
+    <header className='h-[86px] w-full flex items-center px-[9%] bg-[#FFFFFF] justify-between '>
       {/* Left: Logo and Brand Name */}
       <div className='flex items-center'>
         <img src={logo} alt="Logo" className='' />
@@ -15,7 +15,7 @@ export default function Header({showSearch =true}) {
         <div className='flex border-[2px] border-primary rounded-[5px] overflow-hidden'>
             <input
             type='text'
-            className='w-[420px] h-[40px] px-2 outline-none'
+            className=' w-[420px] h-[40px] px-2 outline-none'
             placeholder='Search'
             />
             <select className='w-[145px] h-[40px] border-l-2 border-primary outline-none text-gray-700'>
