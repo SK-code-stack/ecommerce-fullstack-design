@@ -4,7 +4,8 @@ import NavBar from './Components/Header Footer/NavBar'
 import Newsletter from './Components/Header Footer/Newsletter'
 import Footer from './Components/Header Footer/Footer'
 import Section_Main from './Components/HomePage/Section_Main'
-import HomeOutDoor from './Components/HomePage/DealsOffers'
+// import HomeOutDoor from './Components/HomePage/home'
+import DealsOffers from './Components/HomePage/DealsOffers'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
 
         
         <Section_Main />
-        <HomeOutDoor/>
+        {/* <HomeOutDoor/> */}
+        <DealsOffers/>
 
 
 
