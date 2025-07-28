@@ -3,6 +3,7 @@ import Section_Main from './Section_Main'
 import DealsOffers from './DealsOffers'
 import HomeOutdoor from './HomeOutdoor'
 import HomeElectronics from './HomeElectronics'
+import SectionInquiry from './SectionInquiry'
 
 export default function HomePage() {
   return (
@@ -12,6 +13,8 @@ export default function HomePage() {
     <DealsOffers/>
     <HomeOutdoor/>
     <HomeElectronics/>
+    <SectionInquiry/>
+
     
     
     </>
