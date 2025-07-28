@@ -16,7 +16,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav className='w-full h-[56px] px-[9%] bg-white flex items-center justify-between text-base border-y-[1px] border-gray-200 '>
+    <nav className='overflow-hidden w-full h-[56px] px-[9%] bg-white flex items-center justify-between text-base border-y-[1px] border-gray-200 '>
 
       {/* Left Navigation */}
       <div className='flex items-center gap-6 text-black'>
