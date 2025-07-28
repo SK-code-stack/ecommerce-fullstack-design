@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import api, {BASE_URL} from '../Api';
-import DealCard from './DealCard'; 
+import DealCard from './Cards/DealCard'; 
 
 export default function DealsOffers() {
   const [deals, setDeals] = useState([]);

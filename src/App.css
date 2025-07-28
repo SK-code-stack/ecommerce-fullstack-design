@@ -21,7 +21,14 @@ a:hover{
     background-repeat: no-repeat;
     background-position: center;
 }
+.homeoutdoor{
+    background-image: url('./assets/backgrounds/homeoutdoor.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .cborder{
     border: 1px solid rgb(201, 201, 201);
 }
+

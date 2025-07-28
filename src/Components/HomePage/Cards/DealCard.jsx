@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import BASE_URL from '../Api';
-import { Bs0Circle } from 'react-icons/bs';
 
 export default function DealCard({ deal }) {
   const getTimeLeft = (endTime) => {
@@ -25,7 +23,7 @@ export default function DealCard({ deal }) {
     <div className="lg:mx-[9%] lg:w-[82%] bg-white lg:rounded-xl  lg:border-2 lg:border-gray-300 md:w-full md:mx-0 md:rounded-none md:border-none md:my-1 ">
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Timer Section */}
-        <div className="shrink-0 p-4">
+        <div className="shrink-0 p-4 ">
           <div className="lg:flex-col flex justify-between">
             <div>
               <h4 className="text-lg md:text-sm font-semibold">Deals and offers</h4>

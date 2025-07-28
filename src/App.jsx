@@ -3,10 +3,7 @@ import Header from './Components/Header Footer/Header'
 import NavBar from './Components/Header Footer/NavBar'
 import Newsletter from './Components/Header Footer/Newsletter'
 import Footer from './Components/Header Footer/Footer'
-import Section_Main from './Components/HomePage/Section_Main'
-// import HomeOutDoor from './Components/HomePage/home'
-import DealsOffers from './Components/HomePage/DealsOffers'
-
+import HomePage from './Components/HomePage/HomePage'
 function App() {
 
 
@@ -17,10 +14,7 @@ function App() {
         <NavBar />
 
 
-        
-        <Section_Main />
-        {/* <HomeOutDoor/> */}
-        <DealsOffers/>
+        <HomePage />
 
 
 
