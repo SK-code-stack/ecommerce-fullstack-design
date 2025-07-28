@@ -4,7 +4,7 @@ import profilepic from '../../assets/social/photo.png';
 export default function Section_Main() {
   return (
     <>
-      <div className='lg:w-[82%] bg-white md:w-full  lg:border border-2 border-gray-300 lg:rounded-lg md:border-none  lg:mx-[9%] lg:my-4'>
+      <div className='lg:w-[82%] bg-white md:w-full  lg:border border-2 border-gray-300 lg:rounded-lg md:border-none  lg:mx-[9%] lg:my-4 shadow'>
         <div className="flex flex-col lg:flex-row p-2 mx-auto ">
 
           {/* Categories - Hidden on small screens */}

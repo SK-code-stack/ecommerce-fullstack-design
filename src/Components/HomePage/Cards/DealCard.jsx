@@ -20,7 +20,7 @@ export default function DealCard({ deal }) {
   }, [deal.deal_ends_at]);
 
   return (
-    <div className="lg:mx-[9%] lg:w-[82%] bg-white lg:rounded-xl  lg:border-2 lg:border-gray-300 md:w-full md:mx-0 md:rounded-none md:border-none md:my-1 ">
+    <div className="lg:mx-[9%] lg:w-[82%] bg-white lg:rounded-xl  lg:border-2 lg:border-gray-300 md:w-full md:mx-0 md:rounded-none md:border-none md:my-1 shadow">
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Timer Section */}
         <div className="shrink-0 p-4 ">

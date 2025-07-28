@@ -4,7 +4,7 @@ export default function Newsletter() {
   return (
     <>
 
-    <div className="h-48 w-full bg-gray-200 flex justify-center">
+    <div className="h-48 w-full  flex justify-center">
 
         <div className="my-9 text-center">
 
