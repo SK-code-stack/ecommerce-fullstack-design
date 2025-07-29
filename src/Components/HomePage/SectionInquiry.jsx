@@ -6,7 +6,7 @@ export default function SectionInquiry() {
     <>
     <div 
     className="lg:mx-[9%] lg:w-[82%]  bg-white lg:rounded-xl lg:mt-3 lg:border-2 lg:border-black md:w-full md:mx-0 md:rounded-none md:border-none md:my-1 overflow-scroll shadow bg-cover bg-no-repeat"
-    style={{backgroundImage:  `url(${building})` }}
+    style={{backgroundImage:  `url(${building})`}}
     >
 
     <div className="flex justify-end w-full h-full">

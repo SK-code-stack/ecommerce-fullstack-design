@@ -4,6 +4,8 @@ import DealsOffers from './DealsOffers'
 import HomeOutdoor from './HomeOutdoor'
 import HomeElectronics from './HomeElectronics'
 import SectionInquiry from './SectionInquiry'
+import SectionRecomended from './SectionRecomended'
+import SectionServices from './SectionServices'
 
 export default function HomePage() {
   return (
@@ -14,6 +16,8 @@ export default function HomePage() {
     <HomeOutdoor/>
     <HomeElectronics/>
     <SectionInquiry/>
+    <SectionRecomended />
+    <SectionServices />
 
     
     
