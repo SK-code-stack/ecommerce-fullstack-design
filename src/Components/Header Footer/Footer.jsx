@@ -12,7 +12,7 @@ import appstore from '../../assets/social/appstore.png';
 export default function Footer() {
   return (
     <>
-    <footer className="bg-white w-full h-80 overflow-hidden">
+    <footer className="bg-white w-full h-80 overflow-x-scroll">
 
     {/* top div */}
 

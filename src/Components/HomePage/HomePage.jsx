@@ -6,6 +6,7 @@ import HomeElectronics from './HomeElectronics'
 import SectionInquiry from './SectionInquiry'
 import SectionRecomended from './SectionRecomended'
 import SectionServices from './SectionServices'
+import SectionCountry from './SectionCountry'
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
     <SectionInquiry/>
     <SectionRecomended />
     <SectionServices />
+    <SectionCountry />
 
     
     
