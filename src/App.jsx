@@ -4,6 +4,7 @@ import NavBar from './Components/Header Footer/NavBar'
 import Newsletter from './Components/Header Footer/Newsletter'
 import Footer from './Components/Header Footer/Footer'
 import HomePage from './Components/HomePage/HomePage'
+import ProductListingPage from './Components/Product listing/ProductListingPage'
 function App() {
 
 
@@ -14,8 +15,9 @@ function App() {
         <NavBar />
 
 
-        <HomePage />
+        {/* <HomePage /> */}
 
+        <ProductListingPage />
 
 
 
