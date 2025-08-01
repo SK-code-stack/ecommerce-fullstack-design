@@ -1,12 +1,17 @@
 import React from 'react';
 import logo from '../../assets/HeaderImages/logo.png';
+import { Link } from 'react-router-dom';
 
 export default function Header({showSearch =true}) {
   return (
     <header className='h-[86px] w-full flex items-center px-[9%] bg-[#FFFFFF] justify-between '>
       {/* Left: Logo and Brand Name */}
       <div className='flex items-center'>
-        <img src={logo} alt="Logo" className='' />
+        <Link
+          to="/"
+           > 
+          <img src={logo} alt="Logo" className='' />
+        </Link>
       </div>
 
       {/* Center: Search Bar */}
@@ -19,9 +24,9 @@ export default function Header({showSearch =true}) {
             placeholder='Search'
             />
             <select className='w-[145px] h-[40px] border-l-2 border-primary outline-none text-gray-700'>
-            <option>All category</option>
-            <option>Books</option>
-            <option>Electronics</option>
+              <option>All category</option>
+              <option>Books</option>
+              <option>Electronics</option>
             </select>
             <button className='bg-blue-600 text-white px-4 h-[40px]'>Search</button>
         </div>

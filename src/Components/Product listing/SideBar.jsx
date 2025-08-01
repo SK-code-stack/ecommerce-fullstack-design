@@ -21,7 +21,10 @@ const SideBar = () => {
 
   return (
     <>
-      <div className="section1 flex flex-col w-1/5">
+
+
+
+<div className="section1 hidden lg:flex flex-col w-full lg:w-1/5">
         {/* Category */}
         <div className="category flex flex-col">
           <div className="drop border-t border-gray-400 pt-3">

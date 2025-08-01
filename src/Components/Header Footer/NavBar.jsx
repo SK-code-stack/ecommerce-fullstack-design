@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 
 export default function NavBar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -23,11 +26,20 @@ export default function NavBar() {
         {/* Hamburger + All Category */}
         <div className='flex items-center gap-1 cursor-pointer'>
           <i className="fas fa-bars text-xl"></i>
-          <span>All category</span>
+          <Link
+          to="/products"
+          >
+          <span className='text-black'>All category</span>
+          </Link>
         </div>
 
         {/* Links after adding router replace l with link */}
-        <l href="/hot-offers" className='cursor-pointer  text-black'>Hot offers</l>
+          <HashLink
+            to="/#homedeals"
+            className='cursor-pointer text-black'
+          >
+            Hot offers
+          </HashLink>
         <l href="/gift-boxes" className='cursor-pointer no-underline text-black'>Gift boxes</l>
         <l href="/projects" className='cursor-pointer no-underline text-black'>Projects</l>
         <l href="/menu-item" className='cursor-pointer no-underline text-black'>Menu item</l>

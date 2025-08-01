@@ -1,5 +1,7 @@
 import React from 'react';
 import profilepic from '../../assets/social/photo.png';
+import { Link } from 'react-router-dom';
+
 
 export default function Section_Main() {
   return (
@@ -11,7 +13,7 @@ export default function Section_Main() {
           <div className='hidden lg:block w-[200px]'>
             {[
               "Automobiles",
-              "Clothes and wear",
+              "Clothes and ware",
               "Home interiors",
               "Computer and tech",
               "Tools, equipments",
@@ -24,8 +26,10 @@ export default function Section_Main() {
                 key={index}
                 className='hover:bg-[#E5F1FF] hover:font-bold hover:text-black rounded-sm px-1 '
               >
-                <a href="">{item}</a>
-              </p>
+                    <Link to={`/products?category=${encodeURIComponent(item)}`}>
+                      {item}
+                    </Link> 
+              </p>  
             ))}
           </div>
 

@@ -10,18 +10,18 @@ export default function RecomendedCard({product, title}) {
                 {product.map((item, i) => (
                     <div
                     key={i}
-                    className="bg-white rounded-xl border-1 border-gray-300 p-2 h- "
+                    className="bg-white rounded-xl border-1 border-gray-300 p-2   "
                     >
-                        <div className="w-auto h-2/3 flex justify-center ">
+                        <div className="w-auto h-1/2 flex justify-center ">
                             <img
                             src={item.product[item.product.main_image]}
                             alt={item.product.name}
-                            className="w-30 h-30 object-contain"
+                            className="w-40 h-40 object-contain "
                             />
                         </div>
-                        <div className='mt-4'>
+                        <div className='mt-8 p-2 h-1/2 '>
                             <h6 className=''>{`$ ${item.product.price}`}</h6>
-                            <h6 className='h6text'>{item.product.name}</h6>
+                            <h6 className='h6text '>{item.product.name}</h6>
                         </div>
                     
                     </div>

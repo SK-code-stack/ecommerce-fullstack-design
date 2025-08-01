@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function DealCard({ deal }) {
-  const getTimeLeft = (endTime) => {
-    const total = new Date(endTime) - new Date();
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-    const days = Math.floor(total / (1000 * 60 * 60 * 24));
-    return { days, hours, minutes, seconds };
-  };
+const getTimeLeft = (endTime) => {
+  const total = new Date(endTime) - new Date();
+  if (total <= 0) {
+    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  }
+  const seconds = Math.floor((total / 1000) % 60);
+  const minutes = Math.floor((total / 1000 / 60) % 60);
+  const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+  const days = Math.floor(total / (1000 * 60 * 60 * 24));
+  return { days, hours, minutes, seconds };
+};
+
 
   const [timeLeft, setTimeLeft] = useState(getTimeLeft(deal.deal_ends_at));
 
@@ -20,7 +25,7 @@ export default function DealCard({ deal }) {
   }, [deal.deal_ends_at]);
 
   return (
-    <div className="lg:mx-[9%] lg:w-[82%] bg-white lg:rounded-xl  lg:border-2 lg:border-gray-300 md:w-full md:mx-0 md:rounded-none md:border-none md:my-1 shadow">
+    <div id='homedeals' className="lg:mx-[9%] lg:w-[82%] bg-white lg:rounded-xl  lg:border-2 lg:border-gray-300 md:w-full md:mx-0 md:rounded-none md:border-none md:my-1 shadow">
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Timer Section */}
         <div className="shrink-0 p-4 ">
@@ -53,6 +58,10 @@ export default function DealCard({ deal }) {
         <div className="w-full lg:w-4/5 overflow-x-auto overflow-y-hidden">
           <div className="flex gap-0 flex-nowrap px-2">
             {deal.deal_products.map((item, i) => (
+              <Link
+                to="/products"
+                state={{ products: deal.deal_products.map(item => item.product) }}
+              >
               <div
                 key={i}
                 className="border border-gray-300 min-w-1/5 w-40 h-[240px] flex-shrink-0"
@@ -76,6 +85,7 @@ export default function DealCard({ deal }) {
                     </div>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -9,7 +9,7 @@ export default function SectionRecomended() {
 
 
     useEffect(() => {
-      api.get('home-homeoutdoor')
+      api.get('home-recomended')
       .then((res) => {
         setProduct(res.data)
         console.log(res.data)

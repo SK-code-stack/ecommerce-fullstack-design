@@ -11,7 +11,7 @@ export default function ProductCard({product, grid}) {
     >
       {/* Image section */}
       <div className={`${grid === 1 ? "w-1/6" : "w-full h-full flex justify-center items-center  "}`}>
-        <div className={`${grid === 1 ? "w-full" : "w-1/2"}`}>
+        <div className={`${grid === 1 ? "w-full" : "w-1/3 block justify-center items-center"}`}>
             <img
             src={product[product.main_image]}
             alt={product.name}
@@ -34,7 +34,8 @@ export default function ProductCard({product, grid}) {
             <p className="text-xl font-bold">${product.price}</p>
             )}  
         {/* ratting stars */}
-        <div className="flex items-center gap-1">
+        <div className={` ${grid === 1 ? "flex" : "block"} items-center gap-1`}>
+          <div className='flex items-center justify-center'>
           {[...Array(5)].map((_, index) => (
             <img
               key={index}
@@ -43,8 +44,10 @@ export default function ProductCard({product, grid}) {
               className="w-4 h-4"
             />
           ))}
-          <div className="flex items-center gap-2 text-sm">
-              <span className="text-orange-500">{product.rating_count}</span>
+          <span className="text-orange-500">{product.rating_count}</span>
+          </div>
+          
+          <div className={`${grid === 1 ? "flex" : "block"} items-center gap-2 text-sm`}>
               <span className="font-bold text-gray-500">•</span>
               <span className="text-gray-500">154 orders</span>
               <span className="font-bold text-gray-500">•</span>

@@ -23,7 +23,12 @@ useEffect(() => {
 
   return (
     <>
-    <BlockItemGroup titleleft={"Home and outdoor"} leftImage={homeOutdoorBg} product={product}/>
+        <BlockItemGroup
+          titleleft="home-homeoutdoor"
+          leftImage={homeOutdoorBg}
+          product={product}
+          categoryName="Home interiors" 
+        />
     </>
   )
 }
