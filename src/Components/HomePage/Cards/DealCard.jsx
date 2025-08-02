@@ -28,7 +28,7 @@ const getTimeLeft = (endTime) => {
     <div id='homedeals' className="lg:mx-[9%] lg:w-[82%] bg-white lg:rounded-xl  lg:border-2 lg:border-gray-300 md:w-full md:mx-0 md:rounded-none md:border-none md:my-1 shadow">
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Timer Section */}
-        <div className="shrink-0 p-4 ">
+        <div className="shrink-0 p-4  ">
           <div className="lg:flex-col flex justify-between">
             <div>
               <h4 className="text-lg md:text-sm font-semibold">Deals and offers</h4>
@@ -66,7 +66,7 @@ const getTimeLeft = (endTime) => {
                 key={i}
                 className="border border-gray-300 min-w-1/5 w-40 h-[240px] flex-shrink-0"
               >
-                <div className="flex flex-col items-center justify-center h-full text-gray-500">
+                <div className="flex flex-col items-center  justify-center h-full text-gray-500">
                   <div className="h-36 w-36 flex justify-center items-center p-2">
                     <img
                       src={item.product[item.product.main_image]}

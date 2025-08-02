@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header({showSearch =true}) {
   return (
-    <header className='h-[86px] w-full flex items-center px-[9%] bg-[#FFFFFF] justify-between '>
+    <header id='nav' className='h-[86px] w-full flex items-center px-[9%] bg-[#FFFFFF] justify-between '>
       {/* Left: Logo and Brand Name */}
       <div className='flex items-center'>
         <Link

@@ -10,8 +10,7 @@ const ProductListingPage = () => {
   return (
     <div className="lg:mx-[9%] lg:w-[82%]">
         <Breadcrumb
-            category={location.state?.category || "Category"}
-            product={location.state?.product || "Product"}
+          product={{ category: 'All Category' }} // Placeholder data
         />
 
       <div className="flex gap-3">

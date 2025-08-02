@@ -21,11 +21,11 @@ export default function ProductCard({product, grid}) {
       </div>
 
       {/* Text content */}
-      <div className={`${grid === 1 ? "w-2/3" : "w-full"} flex flex-col justify-center`}>
-        <h5 className="text-lg font-semibold">{product.name}</h5>
+      <div className={`${grid === 1 ? "w-2/3" : "w-full"} flex flex-col justify-center text-black`}>
+        <h5 className="text-lg font-semibold text-black">{product.name}</h5>
         {/* price and dicscounted price */}
             {product.discounted_price && product.discounted_price !== product.price ? (
-            <p className="text-xl font-bold">
+            <p className="text-xl font-bold ">
                 <span className="">${product.discounted_price}</span>
                 {" "}
                 <del className="text-gray-500 text-sm">${product.price}</del>
