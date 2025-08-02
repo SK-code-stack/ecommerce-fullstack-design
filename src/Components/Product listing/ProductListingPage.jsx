@@ -9,7 +9,11 @@ const ProductListingPage = () => {
 
   return (
     <div className="lg:mx-[9%] lg:w-[82%]">
-      <Breadcrumb />
+        <Breadcrumb
+            category={location.state?.category || "Category"}
+            product={location.state?.product || "Product"}
+        />
+
       <div className="flex gap-3">
         <SideBar />
         <ContentProduct dealProducts={dealProducts} />

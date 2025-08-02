@@ -5,6 +5,7 @@ import Newsletter from './Components/Header Footer/Newsletter';
 import Footer from './Components/Header Footer/Footer';
 import HomePage from './Components/HomePage/HomePage';
 import ProductListingPage from './Components/Product listing/ProductListingPage';
+import ProductDetail from './Components/Product Detail/ProductDetail';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductListingPage />} />
+        <Route path="/" element={<ProductDetail />} />
+        {/* <Route path="/" element={<HomePage />} /> */}
+        {/* <Route path="/products" element={<ProductListingPage />} /> */}
       </Routes>
 
       <Newsletter />

@@ -1,9 +1,13 @@
 import axios from "axios";
 
-export const BASE_URL = 'http://127.0.0.1:8000'
+// Local (for development)
+// export const BASE_URL = 'http://127.0.0.1:8000'
+
+// Deployed backend on Render
+export const BASE_URL = 'https://ecommerce-backend-django-8z5g.onrender.com';
 
 const api = axios.create({
-    baseURL: 'http://127.0.0.1:8000'
-})
+    baseURL: BASE_URL,
+});
 
-export default api
+export default api;
