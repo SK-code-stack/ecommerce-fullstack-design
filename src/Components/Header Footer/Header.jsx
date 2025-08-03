@@ -48,7 +48,9 @@ export default function Header({showSearch =true}) {
         </div>
         <div className='flex flex-col items-center'>
           <i className="fas fa-shopping-cart"></i>
-          <span>My cart</span>
+          <Link to="/cart" >
+            <span>My cart</span>
+          </Link>
         </div>
       </div>
     </header>
