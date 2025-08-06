@@ -12,26 +12,7 @@ const initialCartItems = [
     color: "blue",
     material: "Plastic",
   },
-  {
-    id: 2,
-    name: "T-shirts with multiple colors, for men and lady",
-    price: 39.00,
-    quantity: 3,
-    seller: "Best factory LLC",
-    size: "medium",
-    color: "blue",
-    material: "Plastic",
-  },
-  {
-    id: 3,
-    name: "T-shirts with multiple colors, for men and lady",
-    price: 170.5,
-    quantity: 1,
-    seller: "Artel Market",
-    size: "medium",
-    color: "blue",
-    material: "Plastic",
-  },
+
 ];
 
 const initialSavedItems = [1, 2, 3, 4].map((i) => ({
@@ -80,7 +61,7 @@ export default function CartPage() {
             <div key={item.id} className="border-b-1 border-gray-300  p-4 flex flex-col md:flex-row  justify-between">
                 <div className="flex gap-2">
                     <div className=" w-2/12">
-                        <img src="sa" alt="my img" className="bg-black"/>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRerSKGX1pm2GXuSTIqTbFnIe87I2T_9Lze1g&s" alt="my img" className="bg-black"/>
                     </div>
                     <div>
                         <h5 className="font-semibold">{item.name}</h5>

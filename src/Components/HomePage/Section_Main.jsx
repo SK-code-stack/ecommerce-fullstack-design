@@ -56,7 +56,7 @@ export default function Section_Main() {
                 <button className='btn btn-primary w-full'>Join now</button>
                 </div>
                 <div className="flex justify-center items-center p-1">
-                <button className='btn btn-light w-full'>Log in</button>
+                <Link to="/loginpage" className='btn btn-light w-full'>Log in</Link>
                 </div>
                 </div>
 

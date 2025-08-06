@@ -8,6 +8,8 @@ export const BASE_URL = 'https://ecommerce-backend-django-8z5g.onrender.com';
 
 const api = axios.create({
     baseURL: BASE_URL,
+    //   withCredentials: true, // send cookies if session auth is used
+
 });
 
 export default api;
